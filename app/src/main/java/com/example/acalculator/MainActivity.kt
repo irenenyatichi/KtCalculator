@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btnAdd=findViewById<Button>(R.id.btnAdd)
         val btnMinus=findViewById<Button>(R.id.btnSubtract)
         val btnDivide=findViewById<Button>(R.id.btnMultiply)
-        val btnModulus=findViewById<Button>(R.id.btnModulus)
+        val btnModulus=findViewById<Button>(R.id.btnDivide)
 
         btnAdd.setOnClickListener {
             if(etNum1.text.toString()==""|| etNum2.text.toString()==""){
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 val input1=etNum1.text.toString().toInt()
                 val input2=etNum2.text.toString().toInt()
-                val sum=input1-input2
+                val sum=input1+input2
                 results.text="${sum}"
 
             }}
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 val input1=etNum1.text.toString().toInt()
                 val input2=etNum2.text.toString().toInt()
-                val divide=input1-input2
+                val divide=input1*input2
                 results.text="${divide}"
 
             }}
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 val input1=etNum1.text.toString().toInt()
                 val input2=etNum2.text.toString().toInt()
-                val modulus=input1-input2
+                val modulus=input1/input2
                 results.text="${modulus}"
 
             }
