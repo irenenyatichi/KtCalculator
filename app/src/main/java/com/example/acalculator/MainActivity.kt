@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
             }else{
                 val input1=etNum1.text.toString().toInt()
                 val input2=etNum2.text.toString().toInt()
-                val divide=input1*input2
-                results.text="${divide}"
+                val multiply=input1*input2
+                results.text="${multiply}"
 
             }}
         btnModulus.setOnClickListener {
